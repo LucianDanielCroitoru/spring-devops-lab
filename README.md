@@ -62,6 +62,12 @@ Main application layers included in the project:
 ├── HELP.md
 ├── README.md
 ├── docker-compose.yaml
+├── docs/
+│   ├── docker-compose.png
+│   ├── grafana-dashboard.png
+│   ├── k8s-pods.png
+│   ├── local-run.png
+│   └── prometheus-targets.png
 ├── k8s/
 │   ├── app-configmap.yaml
 │   ├── app-deployment.yaml
@@ -78,14 +84,6 @@ Main application layers included in the project:
 │   └── prometheus-service.yaml
 ├── src/
 │   ├── main/
-│   │   ├── java/ro/lucian/springdevopslab/
-│   │   │   ├── config/
-│   │   │   ├── controller/
-│   │   │   ├── dto/
-│   │   │   ├── model/
-│   │   │   ├── repository/
-│   │   │   └── service/
-│   │   └── resources/
 │   └── test/
 ├── terraform/
 │   ├── app.tf
@@ -93,8 +91,8 @@ Main application layers included in the project:
 │   ├── outputs.tf
 │   ├── postgres.tf
 │   ├── providers.tf
-│   ├── terraform.tfvars
-│   └── variables.tf
+│   ├── variables.tf
+│   └── terraform.tfvars
 ├── mvnw
 ├── mvnw.cmd
 └── pom.xml
@@ -276,8 +274,6 @@ This keeps the application portable across local development, Docker Compose, an
 
 ## Screenshots
 
-```md
-
 ### Local run
 ![Local app](docs/local-run.png)
 
@@ -292,7 +288,6 @@ This keeps the application portable across local development, Docker Compose, an
 
 ### Grafana dashboard
 ![Grafana dashboard](docs/grafana-dashboard.png)
-```
 
 ## Troubleshooting
 
