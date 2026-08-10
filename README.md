@@ -323,6 +323,18 @@ kubectl logs deployment/postgres
 - [x] Add Terraform
 - [x] Add architecture diagram and screenshots
 
+## Git pre-commit hook (optional)
+
+This repository includes a helper script to run Maven tests before each commit:
+
+```bash
+cp dev-tools/pre-commit-mvn-test.sh .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+With this in place, `./mvnw test` will run automatically before each `git commit`.
+If tests fail, the commit is aborted.
+
 ## Notes
 
 `HELP.md` is kept as the default Spring Boot helper file.
